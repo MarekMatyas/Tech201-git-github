@@ -27,5 +27,17 @@
 ### If encountering a merging problem that is because the changes differ from local to global
 Please follow these steps to resolve:
 1. `ls`  to display the list of directories 
-2. `ls -a` (all) shows us the hidden folders (.git folder)
-3. 
+2. `ls -a` (all) shows us the hidden folders (.git folder) this *.git* folder saves all the information like *status* and *commits*
+3. `rm -rf .git` to remove
+4. `ls -a` to list all folders and make sure that *.git* folder has been removed 
+5. Then copy the *HTTPS* from GitHub and use `git clone` + URL from GitHub repository to clone again
+6. `cd` + name of the folder (example Tech201-git-github) to navigate to the correct folder
+7. `nano README.md` to open the editor to add and test the functionality 
+8. `cat README.md` displays all the changes made 
+9. `git status` to check if the changes were added to commit, if not then follow the next steps
+10. `git add .` to add all the changes
+11. `git status` to check if all the changes are ready to be committed 
+12. `git commit -m "relevant message"` to commit the changes 
+13. `git push -u origin main` to send the changes to global
+
+### Now we should be all up and running 
